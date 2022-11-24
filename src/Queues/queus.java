@@ -38,6 +38,22 @@ public class queus {
 		}
 
 	}
+
+		// impliment "Circular Queue insert" method
+	
+		public void cinsert(int x) {
+			if(nitems == maxsize-1)
+				System.out.println("Circular Queue is full..!");
+			else {
+				if(rear==maxsize-1)
+					rear=0;
+				else
+					rear++;
+				
+				quearray[rear]= x;
+				nitems++;
+			}		
+		}
 	
 	// impliment "remove" method
 	
