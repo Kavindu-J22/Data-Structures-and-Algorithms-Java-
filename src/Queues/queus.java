@@ -69,6 +69,25 @@ public class queus {
 		}
 	}
 
+		// impliment "Circular Queue remove" method
+	
+		public int cremove() {
+			if(isempty()) { // or nitems == 0
+				System.out.println("Queue is Empty..!");
+				return -99;
+			}	
+			else {
+				nitems--;
+				int x = quearray[front];
+				
+				if(front == maxsize-1)
+					front = 0;
+				else
+					front++;
+				
+				return x;
+			}
+		}
 
 	
 	// impliment "peekfront" method
