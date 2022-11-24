@@ -1,5 +1,9 @@
 package Link_lists;
 
+	// This is for Understanding purpose(Small Application)
+	// How to Connect this Links together
+	// Whatever, next step is linkList.java Cording
+	
 public class linkMain {
 	public static void main(String[] args) {
 		linkx l1 = new linkx(20);
